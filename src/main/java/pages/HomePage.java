@@ -49,12 +49,9 @@ public class HomePage {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath(pathRegistry.getPath(AppElements.LOGIN_TAB_CUSTOMER))
             ));
-            System.out.println("TTTT");
 
             return element.isDisplayed();
         } catch (TimeoutException | NoSuchElementException e) {
-            System.out.println("RRRR");
-
             return false;
         }
     }
