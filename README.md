@@ -18,15 +18,16 @@
 8. Gradle build to install dependences
   `gradle build`
 
-9. Start Appium Server.
+9. Start Appium Server
   `appium`
 
   If facing error cann't start session
   `appium --allow-cors`
 
-10. ADB services.
+
+10. ADB services
   `adb server-start`
 
-  *Notice: Ensure your devide is in development mode.*
+  *Notice: Ensure your devide is in development mode*
 
 11. Run test
