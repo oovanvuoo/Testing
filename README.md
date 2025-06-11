@@ -63,8 +63,49 @@
    Run all tests:  
    ```bash
    ./gradlew test
-   ```  
-   Run specific test class (example):  
-   ```bash
-   ./gradlew test --tests "tests.HomePageTest"
    ```
+
+
+## 📁 Project Structure
+
+```bash
+MobileAutomate/
+├── build.gradle
+├── settings.gradle
+├── mobile/
+│   ├── main/java/
+│   │   ├── config/
+│   │   ├── elements/
+│   │   │   ├── devices/
+│   │   │   ├── xpath/
+│   │   ├── pages/
+│   │   └── utils/
+│   │       └── actions/
+│   └── test/java/
+│       ├── base/
+│       └── tests/
+```
+
+## 🧩 Guidelines
+
+### 1. **Common**
+
+- All elements are named in `elements/AppElements.java` so they can be used globally throughout the project.
+
+### 2. **Add New Device**
+
+a. Add a new device name in `AppElements.java`  
+b. Add its capabilities in `TestDevices.java`  
+c. Use the device by its defined name in `BaseTest > setUp()`
+
+### 3. **Add New Action**
+
+a. Create a new class under `utils/actions/`  
+b. Initialize and call the action in `BasePage.java` or a relevant base class
+
+### 4. **Add New XPath**
+
+a. Define a constant in `AppElements.java`  
+b. Add the actual XPath in:
+   - `xpath/AndroidXPath.java` for Android
+   - `xpath/IOSXPath.java` for iOS
