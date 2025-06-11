@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Appium Java Client
+    implementation 'io.appium:java-client:9.0.0'
+
+    // Selenium (needed for driver and support classes)
+    implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+
+    // TestNG for test framework
+    testImplementation 'org.testng:testng:7.7.0'
+
+
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useTestNG()
+    useJUnit()
+}
