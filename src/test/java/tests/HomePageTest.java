@@ -20,7 +20,7 @@ public class HomePageTest extends BaseTest {
         homePage = new HomePage(driver);
     }
 
-    // @Test
+    @Test
     public void TestAccessLoginPage() {
         Assert.assertTrue(homePage.isLoginPageDisplayed(), "Accessibility menu should be visible");
 
@@ -37,10 +37,12 @@ public class HomePageTest extends BaseTest {
     }
     
 
-    // @Test
+    @Test
     public void TestAccessControl() {
-        homePage.tabOnPhoneInput();
-        homePage.tabOnPasswordInput();
+        // homePage.tabOnPhoneInput();
+        // homePage.tabOnPasswordInput();
+        homePage.inputUsername("0123456789");
+        homePage.inputPassword("857172");
         homePage.tabLoginButton();
     }
 
