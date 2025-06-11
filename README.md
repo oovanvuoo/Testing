@@ -1,33 +1,70 @@
-# Automation Test FW
+# Automation Test Framework
 
 ## Installation and Run
-1. Install JDK 21 (Temurin)
-2. Install Android Platform & Android Tools.
-3. Set JAVA_HOME & ANDROID_HOME variable
-4. Install Appium Server
-5. Install Gradless
-6. Open VS code & Install Java Support Extensions
-  `Language support for Java ™ for Visual Studio Code`
 
-  `Test Runner for Java`
+1. **Install JDK 21 (Temurin)**  
+   Download and install the Temurin JDK 21 from [Adoptium](https://adoptium.net).
 
-  `Extension Pack for Java` This extension will support to install other Java extensions.
+2. **Install Android SDK Platform Tools and Android Build Tools**  
+   You can install via Android Studio or command line.
 
-7. Clone or Download project
+3. **Set Environment Variables**  
+   - `JAVA_HOME` → path to JDK 21  
+   - `ANDROID_HOME` → path to Android SDK  
+   Also, add the following to your system `PATH`:  
+   - `$ANDROID_HOME/platform-tools`  
+   - `$ANDROID_HOME/tools`
 
-8. Gradle build to install dependences
-  `gradle build`
+4. **Install Appium Server**  
+   Install globally via npm:  
+   ```bash
+   npm install -g appium
+   ```
 
-9. Start Appium Server
-  `appium`
+5. **Install Gradle (if not using wrapper)**  
+   Optional if you're using the included Gradle wrapper (`./gradlew`). Otherwise, install manually from [gradle.org](https://gradle.org/install/).
 
-  If facing error cann't start session
-  `appium --allow-cors`
+6. **Open VS Code & Install Java Support Extensions**  
+   Install the following extensions:  
+   - `Language Support for Java™ by Red Hat`  
+   - `Test Runner for Java`  
+   - `Extension Pack for Java` (includes the above and more)
 
+7. **Clone or Download the Project**
+   ```bash
+   git clone <repo-url>
+   cd <project-folder>
+   ```
 
-10. ADB services
-  `adb server-start`
+8. **Build the Project with Gradle**  
+   Install dependencies and compile the code:  
+   ```bash
+   ./gradlew build
+   ```
 
-  *Notice: Ensure your devide is in development mode*
+9. **Start Appium Server**  
+   Default startup:  
+   ```bash
+   appium
+   ```  
+   If you encounter session errors, try:  
+   ```bash
+   appium --allow-cors
+   ```
 
-11. Run test
+10. **Start ADB Services**  
+   Make sure ADB is running:  
+   ```bash
+   adb start-server
+   ```  
+   > ⚠️ Ensure your mobile device is connected and in Developer Mode
+
+11. **Run the Tests**  
+   Run all tests:  
+   ```bash
+   ./gradlew test
+   ```  
+   Run specific test class (example):  
+   ```bash
+   ./gradlew test --tests "tests.HomePageTest"
+   ```
