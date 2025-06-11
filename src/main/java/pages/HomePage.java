@@ -1,17 +1,8 @@
 package pages;
 
 import elements.AppElements;
-import elements.PathRegistry;
 import io.appium.java_client.AppiumDriver;
-import utils.actions.Click;
-
-import java.time.Duration;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
 
 public class HomePage extends BasePage {
    
@@ -22,6 +13,14 @@ public class HomePage extends BasePage {
 
     public void tabOnPhoneInput() {
         driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_PHONE))).click();
+    }
+
+    public void inputUsername(String username){
+        input.enterString(AppElements.LOGIN_PHONE, username);
+    }
+
+    public void inputPassword(String pwd){
+        input.enterString(AppElements.LOGIN_PWD, pwd);
     }
 
     public void tabOnPasswordInput() {
