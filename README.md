@@ -84,7 +84,23 @@ MobileAutomate/
 │   └── test/java/
 │       ├── base/
 │       └── tests/
+├── build/
+│   └── reports/
+│       └── tests/
+│           └── test/
+│               └── packages/
+│                   └── tests.html
 ```
+
+## 📝 Test Reports
+
+After running your tests, you can view detailed HTML reports at:
+
+```
+build/reports/tests/test/packages/tests.html
+```
+
+Open this file in your browser to see test results, including passed, failed, and skipped tests.
 
 ## 🧩 Guidelines
 

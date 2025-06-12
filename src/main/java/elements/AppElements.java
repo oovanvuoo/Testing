@@ -27,5 +27,13 @@ public class AppElements {
     //Error
     public static final String FailMSG = "";
 
+    //ENV
+    public static final String ENV_DEV = "dev";
+    public static final String ENV_PROD = "prod";
+    public static final String ENV_TEST = "test";
+    public static final String ENV_UAT = "uat";
+    public static final String ENV_LOCAL = "local";
+    public static final String ENV_STAGING = "staging";
+
     //Add more here
 }

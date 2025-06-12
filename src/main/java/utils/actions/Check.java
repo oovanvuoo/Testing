@@ -20,7 +20,7 @@ public class Check extends BaseAction {
 
     public boolean isDisplayed(String elementCode) {
         try {
-            return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(pathRegistry.getPath(elementCode)))).isDisplayed();
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(pathRegistry.getPath(elementCode)))).isDisplayed();
         } catch (Exception e) {
             return false;
         }
