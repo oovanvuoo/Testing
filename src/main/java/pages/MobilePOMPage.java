@@ -11,7 +11,8 @@ public class MobilePOMPage extends BasePage {
     }
 
     public void tabOnPhoneInput() {
-        driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_PHONE))).click();
+        click.clickItem(AppElements.LOGIN_PHONE);
+        // driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_PHONE))).click();
     }
 
     public void inputUsername(String username){
@@ -23,20 +24,19 @@ public class MobilePOMPage extends BasePage {
     }
 
     public void tabOnPasswordInput() {
-        driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_PWD))).click();
+        click.clickItem(AppElements.LOGIN_PWD);
+        // driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_PWD))).click();
     }
 
     public void tabLoginButton() {
-        driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_BUTTON))).click();
+        click.clickItem(AppElements.LOGIN_BUTTON);
+        // driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_BUTTON))).click();
     }
 
     public boolean isLoginPageDisplayed() {
-        try {
-            return driver.findElement(By.xpath(pathRegistry.getPath(AppElements.LOGIN_TAB_CUSTOMER))).isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
-        // throw new UnsupportedOperationException("Unimplemented method 'isHomePageDisplayed'");
+        return check.isDisplayed(AppElements.LOGIN_PHONE) && 
+               check.isDisplayed(AppElements.LOGIN_PWD) && 
+               check.isDisplayed(AppElements.LOGIN_BUTTON);
     }
 
     public boolean checkCustomerTabDisplayed() {
