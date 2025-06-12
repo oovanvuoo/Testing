@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MobileAutomationSuite" class="navigator-link">
+              <span class="suite-name border-skipped">MobileAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MobileAutomationSuite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MobileAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MobileAutomationSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MobileAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MobileAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MobileAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MobileAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-MobileAutomationSuite" class="hide-methods skipped suite-MobileAutomationSuite"> (hide)</a> <!-- hide-methods skipped suite-MobileAutomationSuite -->
+                      <a href="#" panel-name="suite-MobileAutomationSuite" class="show-methods skipped suite-MobileAutomationSuite"> (show)</a> <!-- show-methods skipped suite-MobileAutomationSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-MobileAutomationSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MobileAutomationSuite" title="tests.MobilePOMPageTest" class="method navigator-link" hash-for-method="CheckCustomerTabDisplayed">CheckCustomerTabDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MobileAutomationSuite" title="tests.MobilePOMPageTest" class="method navigator-link" hash-for-method="TestAccessControl">TestAccessControl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MobileAutomationSuite" title="tests.MobilePOMPageTest" class="method navigator-link" hash-for-method="TestAccessLoginPage">TestAccessLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MobileAutomationSuite" title="tests.MobilePOMPageTest" class="method navigator-link" hash-for-method="TestOpenTabSale">TestOpenTabSale</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-MobileAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MobileAutomationSuite" class="panel MobileAutomationSuite">
+          <div class="suite-MobileAutomationSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.MobilePOMPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckCustomerTabDisplayed">
+                  </a> <!-- CheckCustomerTabDisplayed -->
+                  <span class="method-name">CheckCustomerTabDisplayed</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials, javax.net.ssl.SSLContext, java.lang.String)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:72)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:91)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:104)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at utils.DriverFactory.createDriver(DriverFactory.java:28)
+	at base.BaseTest.setup(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestAccessControl">
+                  </a> <!-- TestAccessControl -->
+                  <span class="method-name">TestAccessControl</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials, javax.net.ssl.SSLContext, java.lang.String)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:72)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:91)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:104)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at utils.DriverFactory.createDriver(DriverFactory.java:28)
+	at base.BaseTest.setup(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestAccessLoginPage">
+                  </a> <!-- TestAccessLoginPage -->
+                  <span class="method-name">TestAccessLoginPage</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials, javax.net.ssl.SSLContext, java.lang.String)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:72)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:91)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:104)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at utils.DriverFactory.createDriver(DriverFactory.java:28)
+	at base.BaseTest.setup(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestOpenTabSale">
+                  </a> <!-- TestOpenTabSale -->
+                  <span class="method-name">TestOpenTabSale</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials, javax.net.ssl.SSLContext, java.lang.String)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:72)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:91)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:104)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at utils.DriverFactory.createDriver(DriverFactory.java:28)
+	at base.BaseTest.setup(BaseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MobileAutomationSuite-class-skipped -->
+        </div> <!-- panel MobileAutomationSuite -->
+        <div panel-name="test-xml-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/vanvu/Documents/Automation/MobileAutomate/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MobileAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AllTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.MobilePOMPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AllTests --&gt;
+&lt;/suite&gt; &lt;!-- MobileAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MobileAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AllTests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MobileAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MobileAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MobileAutomationSuite');
+function tableData_MobileAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestAccessControl')
+data.setCell(0, 2, 'tests.MobilePOMPageTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CheckCustomerTabDisplayed')
+data.setCell(1, 2, 'tests.MobilePOMPageTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestOpenTabSale')
+data.setCell(2, 2, 'tests.MobilePOMPageTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestAccessLoginPage')
+data.setCell(3, 2, 'tests.MobilePOMPageTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['MobileAutomationSuite']= { tableData: data, tableDiv: 'times-div-MobileAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-MobileAutomationSuite">
+              </div> <!-- times-div-MobileAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MobileAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MobileAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MobilePOMPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">CheckCustomerTabDisplayed</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestAccessControl</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestOpenTabSale</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestAccessLoginPage</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -12,6 +12,8 @@ public class AppElements {
 
     //2. Button
     public static final String LOGIN_BUTTON = "LOGIN_BUTTON";
+    public static final String ERR_BUTON_CONFIM = "ERR_BUTON_CONFIM";
+
     
 
     
@@ -26,6 +28,7 @@ public class AppElements {
 
     //Error
     public static final String FailMSG = "";
+    public static final String MSG_CONNECTION_ERR  = "MSG_CONNECTION_ERR";
 
     //ENV
     public static final String ENV_DEV = "dev";

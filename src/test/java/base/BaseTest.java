@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setup() throws MalformedURLException {
-        driver = DriverFactory.createDriver(AppElements.ANDROID_Pixel5);
+        this.driver = DriverFactory.createDriver(AppElements.ANDROID_Pixel5);
     }
 
     @AfterClass

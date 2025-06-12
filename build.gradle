@@ -20,10 +20,8 @@ dependencies {
     testImplementation 'org.testng:testng:7.7.0'
 
 
-    testImplementation 'junit:junit:4.13.2'
 }
 
 test {
     useTestNG()
-    useJUnit()
 }

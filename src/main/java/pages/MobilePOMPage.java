@@ -4,10 +4,9 @@ import elements.AppElements;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
-public class HomePage extends BasePage {
-   
+public class MobilePOMPage extends BasePage {
 
-    public HomePage(AppiumDriver driver) {
+    public MobilePOMPage(AppiumDriver driver) {
         super(driver);
     }
 
@@ -60,5 +59,10 @@ public class HomePage extends BasePage {
 
     public void openTabSaler(){
         click.clickItem(AppElements.LOGIN_TAB_SALER);
+    }
+
+    public void closePopupError() {
+        check.isDisplayed(AppElements.MSG_CONNECTION_ERR);
+        click.clickItem(AppElements.ERR_BUTON_CONFIM);
     }
 }
