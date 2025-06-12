@@ -1,7 +1,5 @@
 package tests;
 
-import io.appium.java_client.AppiumDriver;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -26,17 +24,11 @@ public class MobilePOMPageTest extends BaseTest {
     @Test
     public void TestAccessLoginPage() {
         Assert.assertTrue(pomPage.isLoginPageDisplayed(), "Accessibility menu should be visible");
-
-        // try {
-        //
-        // } catch (Exception e) {
-        //     fail("Page not found");
-        // }
     }
 
     @Test
     public void CheckCustomerTabDisplayed() {
-        pomPage.checkCustomerTabDisplayed();
+        Assert.assertTrue(pomPage.checkCustomerTabDisplayed(), "Customer tab should be displayed");
     }
     
 
